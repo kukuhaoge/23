@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myapplication2.MainActivity2">
+
+    <TextView
+        android:id="@+id/lableview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登陆界面"
+        android:layout_centerHorizontal="true"
+       />
+    <EditText
+        android:id="@+id/usernameview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lableview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:hint="用户名"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordview"
+        android:layout_below="@id/usernameview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:hint="密码"
+        android:inputType="textPassword"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/canclebutton"
+        android:layout_below="@+id/passwordview"
+        android:layout_alignParentRight="true"
+        android:text="取消"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/okbutton"
+        android:layout_alignBottom="@id/canclebutton"
+        android:layout_toLeftOf="@id/canclebutton"
+        android:text="确定"/>
+</RelativeLayout>
